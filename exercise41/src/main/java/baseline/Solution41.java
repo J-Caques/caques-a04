@@ -14,5 +14,15 @@ package baseline;
  */
 
 public class Solution41 {
+    private void readFile(){
 
+    }
+
+    private void order(){
+
+    }
+
+    private void writeFile(){
+
+    }
 }
