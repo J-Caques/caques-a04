@@ -3,7 +3,7 @@
 
 class Solution41 {
 
-    String: name
+    +String: names[]
 
     -readFile()
     -order()
