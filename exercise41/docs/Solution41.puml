@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution41 {
+
+    String: name
+
+    -readFile()
+    -order()
+    -writeFile()
+}
+
+@enduml
