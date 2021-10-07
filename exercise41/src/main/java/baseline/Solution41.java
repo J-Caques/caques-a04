@@ -4,15 +4,6 @@ package baseline;
  *  Copyright 2021 Jonathan Caques
  */
 
-/*
-
-
-
-
-
-
- */
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
