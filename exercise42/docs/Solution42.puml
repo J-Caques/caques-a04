@@ -1,13 +1,9 @@
 @startuml
 'https://plantuml.com/class-diagram
 class Solution42{
-    String: Last name
-    String: First name
-    Int: Salary
+    +String[]: data
 
     -readFile()
-    -parseData()
     -createTable()
 }
-
 @enduml
