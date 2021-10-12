@@ -6,6 +6,7 @@ class Solution43{
     String author
 
     -generateHtml()
+    -writeToHtml()
     -createFolders()
 }
 

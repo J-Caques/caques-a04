@@ -4,7 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+
 
 class Solution43Test {
 
@@ -23,6 +26,32 @@ class Solution43Test {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        boolean check = new File("data/website/awesomeco", "index.html").exists();
+        Assertions.assertTrue(check);
+
+    }
+
+    @Test
+    void writeToHtml() throws IOException {
+        String siteName = "awesomeco";
+        String author = "Max Power";
+            try {
+                File f = new File("data/website/awesomeco/index.html");
+                FileWriter fw = new FileWriter(f);
+                BufferedWriter pw = new BufferedWriter(fw);
+
+                pw.write("<!DOCTYPE html>");
+                pw.newLine();
+                pw.write("<html>\n");
+                pw.write("<head>\n");
+                pw.write("\t<title>" + siteName + "</title>\n");
+                pw.write("\t<meta name=\"author\" content=\"" + author + "\">\n");
+                pw.write("</head>\n");
+                pw.write("</html>");
+                pw.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
 
     }
