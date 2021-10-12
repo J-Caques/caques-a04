@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution43{
+    String siteName
+    String author
+
+    -generateHtml()
+    -createFolder()
+}
+
+@enduml
