@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Solution45{
+    +String text
+    +main()
+
+}
+
+class ModifyFile{
+    +String text
+    -read()
+    -modify()
+}
+
+class CreateFile{
+    +String Text
+    -create()
+}
+
+Solution45 <-- CreateFile
+ModifyFile --> CreateFile
+
+@enduml
