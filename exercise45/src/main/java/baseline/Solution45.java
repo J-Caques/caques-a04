@@ -22,5 +22,4 @@ public class Solution45 {
             cF.create(userInput);
             cF.write(userInput);
     }
-
 }
