@@ -5,15 +5,22 @@ package baseline;
  *  Copyright 2021 Jonathan Caques
  */
 
-/*
-    Read file "exercise45_input.txt"
-    Search for occurrences for the word "utilize"
-    Replace each occurrence of "utilize" w/ "use".
-    Prompt User for name of output file
-    Create output file
-    Place modified file into new output file
- */
+import java.util.Scanner;
 
 public class Solution45 {
+    public static void main(String[] args) {
+
+        //Prompt User for name of output file
+        System.out.print("What is the name of the output file?: ");
+            Scanner input = new Scanner(System.in);
+            String userInput = input.next();
+
+            //Create CreateFile object
+            CreateFile cF = new CreateFile();
+
+            //Obtains userInput to be used by create() & write()
+            cF.create(userInput);
+            cF.write(userInput);
+    }
 
 }

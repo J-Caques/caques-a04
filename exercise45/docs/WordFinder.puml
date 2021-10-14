@@ -13,8 +13,9 @@ class ModifyFile{
 }
 
 class CreateFile{
-    +String Text
+    +String newText
     -create()
+    -write()
 }
 
 Solution45 <-- CreateFile
