@@ -4,9 +4,15 @@ class Solution46{
 }
 
 class WordCounter{
+    +String text
+    +String[] text
     +String badger
     +String mushroom
     +String snake
+
+    +int bCounter
+    +int mCounter
+    +int sCounter
 
     -read()
     -count()
