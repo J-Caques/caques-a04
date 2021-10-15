@@ -1,0 +1,26 @@
+@startuml
+class Solution46{
+    +main()
+}
+
+class WordCounter{
+    +String badger
+    +String mushroom
+    +String snake
+
+    -read()
+    -count()
+}
+
+class Histogram{
+    -int badger
+    -int mushroom
+    -int snake
+
+
+    -build()
+}
+
+WordCounter --> Histogram
+Histogram --> Solution46
+@enduml
