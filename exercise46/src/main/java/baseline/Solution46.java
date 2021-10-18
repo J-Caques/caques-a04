@@ -1,11 +1,16 @@
 package baseline;
 
 /*
-Read file exercise46_input.txt
-Count the frequency of each word in the file.
-Construct a histogram displaying the words and the frequency
-    -Ensure the most used word is at the top; the least at the bottom.
+ *  UCF COP3330 Fall 2021 Assignment 4 Solutions
+ *  Copyright 2021 Jonathan Caques
  */
 
+
 public class Solution46 {
+    public static void main(String[] args) {
+
+        //Histogram object created to access build method
+        Histogram hBuilder = new Histogram();
+        hBuilder.build();
+    }
 }

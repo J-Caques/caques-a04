@@ -14,8 +14,10 @@ class WordCounter{
     +int mCounter
     +int sCounter
 
-    -read()
-    -count()
+    #read()
+    #bCount()
+    #mCount()
+    #sCount()
 }
 
 class Histogram{
@@ -23,8 +25,10 @@ class Histogram{
     -int mushroom
     -int snake
 
+    -int[] histogram
 
-    -build()
+
+    #build()
 }
 
 WordCounter --> Histogram
