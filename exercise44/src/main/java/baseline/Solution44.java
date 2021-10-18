@@ -5,19 +5,20 @@ package baseline;
  *  Copyright 2021 Jonathan Caques
  */
 
-/*
-   Read product name, along w/ price & quantity, from file "exercise44_input.json"
-   Prompt user:
-    "What is the product name?"
-        If product not found:
-            "Sorry that product was not found in our inventory."
-             Prompt user again for the product
-   Once found, output:
-    "Name: productName"
-    "Price: productPrice"
-    "Quantity: productQuantity"
- */
+import java.util.Scanner;
 
 public class Solution44 {
 
+    public static void main(String[] args) {
+        ReadFile rF = new ReadFile();
+
+        //Prompt user for product name
+        System.out.print("What is the product name?: ");
+        Scanner input = new Scanner(System.in);
+        String userInput = input.next();
+        String product = "\"" + userInput + "\"";
+        String s = rF.read(product);
+        System.out.print(s);
+    }
 }
+

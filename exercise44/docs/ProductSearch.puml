@@ -9,6 +9,7 @@ class Main{
 }
 
 class ReadFile{
+    Products product
     +read()
 }
 
@@ -16,6 +17,14 @@ class SearchFile{
     -String name
     +search()
 }
+
+class Products{
+private String name
+private float price
+private int quantity
+}
+
 Main --o ReadFile
 Main --o SearchFile
+ReadFile --o Products
 @enduml
